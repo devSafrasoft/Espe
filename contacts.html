@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.PNG" type="image/x-icon">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap Reboot CSS -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Main arcticmodal -->
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="fonts/futura/stylesheet.css">
+    <link rel="stylesheet" href="fonts/proxima/stylesheet.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main_vb.css">
+    <link rel="stylesheet" href="css/about_vb.css">
+    <link rel="stylesheet" href="css/materials_vb.css">
+    <link rel="stylesheet" href="css/start-page.css">
+    <link rel="stylesheet" href="css/catalog_vb.css">
+    <link rel="stylesheet" href="css/404.css">
+    <!-- cart, Shopping card,contacts CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile-ver.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+    <!-- fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <!-- Main arcticmodal -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="wrap-header-content">
+                <div class="catalog-header">
+                    <button id="catalogH-burger" class="catalog-header__link">
+                        <i class="catalog-header__icon"></i>
+                        Каталог
+                    </button>
+                </div>
+                <div class="busket-header">
+                    <a href="#" class="busket-header__link">
+                        <i class="busket-header__icon">
+                            <p class="busket-header__quantity">1</p>
+                        </i>
+                        Корзина
+                    </a>
+                </div>
+                <div class="burger-menu-header" id="burger-menu-header">
+                    <i class="burger-menu-header__icon">
+                    </i>
+                    <p class="burger-menu-header__text">
+                        Меню
+                    </p>
+                </div>
+                <ul class="menu-header">
+                    <li class="menu-header__item">
+                        <a href="#" class="menu-header__link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a href="#" class="menu-header__link">                          
+                            Обучающие материалы
+                        </a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a href="#" class="menu-header__link">
+                            О нас
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-search">
+                    <button class="hedear-search__btn" id="search-tab">
+                        <i class="header-search__icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-menu-mob section-menu-mob_close" id="section-menu-mob" style="display: none;">
+        <ul class="menu-mob">
+            <li class="menu-mob__item">
+                <a href="#" class="menu-mob__link">
+                    О нас
+                </a>
+            </li>
+            <li class="menu-mob__item">
+                <a href="#" class="menu-mob__link">
+                    Контакты
+                </a>
+            </li>
+            <li class="menu-mob__item">
+                <a href="#" class="menu-mob__link">
+                    Корзина
+                </a>
+            </li>
+            <li class="menu-mob__item">
+                <a href="#" class="menu-mob__link">
+                    Каталог
+                </a>
+            </li>
+        </ul>
+        <div class="menu-mob-close">
+            <div class="menu-mob-close__border"></div>
+            <div class="menu-mob-close__border"></div>
+            <button class="menu-mob-close__btn" id="menu-mob-close__btn"></button>
+        </div>
+    </section>
+    <div class="content-page">
+        <section class="section-sidebar-catalog" id="catalog-mob">
+            <div class="group-title">
+                <div class="wrap-group-title" onclick="openSidebarTitle(this)">
+                    <div class="container-fluid">
+                        <div class="group-title-link">
+                            <h2 class="group-title-name">
+                                Матрасы
+                            </h2>
+                            <div class="group-title-arrow group-title-arrow_transform">
+                            </div>
+                        </div>
+                        <span class="group-subtitle-name">
+                            комплектующие
+                        </span>
+                    </div>
+                </div>  
+                <ul class="list-catGroup" id="list-catGroup1">  
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    пружины
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    quick-fit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    клей
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    кокос
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    латекс
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    матрасные ткани monkis
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    механизмы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    оборудование quarrata
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    оборудование для клея
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    оке
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    поролон vita
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    пуговицы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    пружины
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    реставрация
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    синтепон
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    фитинги
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                       
+                </ul>
+            </div>
+            <div class="group-title">
+                <div class="wrap-group-title" onclick="openSidebarTitle(this)">
+                    <div class="container-fluid">
+                        <div class="group-title-link">
+                            <h2 class="group-title-name">
+                                Диваны
+                            </h2>
+                            <div class="group-title-arrow">
+                            </div>
+                        </div>
+                        <span class="group-subtitle-name">
+                            комплектующие
+                        </span>
+                    </div>
+                </div>  
+                <ul class="list-catGroup list-catGroup_close" style="display: none;">
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    пружины
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    синтепон
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-catGroup-item" >
+                        <div class="container-fluid" onclick="openTab(this)">
+                            <div class="list-catGroup-link">
+                                <div class="list-catGroup-arrow">
+                                </div>
+                                <p>
+                                    фитинги
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-catGroup-content list-catGroup-content_close" style="display: none;">
+                            <div class="container-fluid">
+                                <div class="list-catGroup-groupLinks">
+                                    <button class="catGroup-link" pro-y="mult">
+                                        серия мульти
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="spring">
+                                        пружинные блоки
+                                    </button>
+                                    <button href="#" class="catGroup-link" pro-y="forest">
+                                        система форест
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                       
+                </ul>
+            </div>
+        </section>
+        <section class="section-search d-none animated" id="section-search">
+            <div class="container-fluid">
+                <form action="#">
+                    <div class="wrap-serch-inputs">
+                        <button class="search-open"></button>
+                        <input type="text" class="search-input">
+                    </div>
+                    <div class="search-links">
+                        <div class="search-links__wrap">
+                            <a href="#" class="search-links__link search-links__link_fr">Пружины</a>
+                            <a href="#" class="search-links__link search-links__link_sc active">Пружинные блоки</a>
+                            <a href="#" class="search-links__link search-links__link_th">Пружины EverSpring</a>
+                            <a href="#" class="search-links__link search-links__link_fr">Пружины Vilara</a>
+                        </div>
+                        <button class="off-hint">
+                            отключить подсказки
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+        <section class="info info_contacts">
+            <div class="info_content container-fluid">
+                <div class="main_content">
+                    <div class="info_left-block info_left-block__shopping-card">
+                        <div class="breadcrumbs_line">
+                            <span class="breadcrumb_link">Каталог – </span>
+                            <span class="breadcrumb_link">Контакты и офисы</span>
+                        </div>
+                        <div class="info_title info_title__shopping-card">
+                            <h1 class="info_h1">Контакты и офисы</h1>
+                        </div>
+                    </div>
+                    <div class="info_right-block info_right-block__contacts">
+                        <div class="info_price-block info_price-block__contacts">
+                            <div class="info_office">
+                                <div class="info_sbt">Email</div>
+                                <div class="info_products">Espe@espe.spb.ru</div>
+                            </div>
+                            <div class="info_office">
+                                <div class="info_sbt">Основной офис в СПб</div>
+                                <div class="info_products">8 (812) 331-34-67</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="info-mob" id="section-title-page">
+            <svg class="header-svg header-svg__contacts" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path class="header-path" fill-rule="evenodd" clip-rule="evenodd" d="M7.17163 12.1376L5.85096 13.6523L0.190938 7.1606L5.85096 0.668859L7.17163 2.1836L2.83228 7.1606L7.17163 12.1376Z" fill="#2F2F2F"/>
+            </svg>
+            <div class="info-mob_content container-fluid">
+                <div class="breadcrumbs_line-mob">
+                    <a href="" class="breadcrumb_link-mob">Каталог</a>
+                </div>
+                <div class="info-mob_main">
+                    <div class="info-mob_wrap">
+                        <h1 class="info-mob_title">Контакты и офисы</h1>
+                    </div>
+                    <button class="hedear-search__btn" id="search-tab-mob">
+                        <i class="header-search__icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section-search d-none animated" id="section-search">
+            <div class="container-fluid">
+                <form action="#">
+                    <div class="wrap-serch-inputs">
+                        <button class="search-open"></button>
+                        <input type="text" class="search-input">
+                    </div>
+                    <div class="search-links">
+                        <div class="search-links__wrap">
+                            <a href="#" class="search-links__link search-links__link_fr">Пружины</a>
+                            <a href="#" class="search-links__link search-links__link_sc active">Пружинные блоки</a>
+                            <a href="#" class="search-links__link search-links__link_th">Пружины EverSpring</a>
+                            <a href="#" class="search-links__link search-links__link_fr">Пружины Vilara</a>
+                        </div>
+                        <button class="off-hint">
+                            отключить подсказки
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+        <section class="office">
+            <div class="office_content container-fluid">
+                <div class="office_top">
+                    <div class="office_title">
+                        <h2 class="common_h2">Выберите ближайший к вам офис</h2>
+                    </div>
+                    <div class="office_btns">
+                        <button class="office_button office_button__black">
+                            <a href="" class="office-btn">Дилеры</a>
+                        </button>
+                        <button class="office_button office_button__color">
+                            <a href="" class="office-btn">Филиалы</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <div class="map_wrap">
+                    <div class="map_info-block">
+                        <div class="map_left">
+                            <div class="additional_button additional_button__mob">
+                                <a href="#" class="additional-btn-mob">Филиал</a>
+                            </div>
+                            <div class="map_txt">
+                                <p class="map_p">г.Санкт-Петербург ул. Химиков, 26</p>
+                            </div>
+                        </div>
+                        <div class="map_right">
+                            <span class="map_espe">«эспе»</span>
+                            <div class="map_icons">
+                                <img src="img/icons/map-to.png" alt="" class="map-icon">
+                                <div class="map_circles">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15104511.787531232!2d55.04917329268888!3d57.2184121285765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469632772b289107%3A0x237a24ca3b3b9e7d!2z0YPQuy4g0KXQuNC80LjQutC-0LIsIDIyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTUwMzA!5e0!3m2!1sru!2sua!4v1566218179429!5m2!1sru!2sua" width="100%" height="645" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="office_content container-fluid">
+                <div class="office_main">
+                    <div class="product_dev product_dev__contacts">
+                        <h2 class="common_h2">Наши контакты</h2>
+                        <span class="office_subtitle">в Санкт-Петербурге </span>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts_menu">
+                                <div class="contacts_link-wrap">
+                                    <div class="contacts_link">Время работы</div>
+                                </div>
+                                <div class="contacts_link-wrap">
+                                    <div class="contacts_link">Адрес</div>
+                                </div>
+                                <div class="contacts_link-wrap">
+                                    <div class="contacts_link">Телефон</div>
+                                </div>
+                                <div class="contacts_link-wrap">
+                                    <div class="contacts_link">Email</div>
+                                </div>
+                            </div>
+                        <div class="contacts_info">
+                            <div class="contacts_link-wrap">
+                                <p class="contacts_txt">9:00 - 17:30 </p>
+                                <p class="contacts_link">обед 13:00 - 13:30</p>
+                            </div>
+                            <div class="contacts_link-wrap">
+                                <p class="contacts_txt">ул. Химиков, 26</p>
+                                <a href="#" class="contacts_a">указать на карте</a>
+                            </div>
+                            <div class="contacts_link-wrap">
+                                <p class="contacts_txt">8 (812) 331-34-67</p>
+                            </div>
+                            <div class="contacts_link-wrap">
+                                <p class="contacts_txt">Espe@espe.spb.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="managers">
+                        <div class="product_dev product_dev__contacts">
+                            <h2 class="common_h2">Менеджеры</h2>
+                            <span class="office_subtitle-two">Менеджеры по продажам в СПб</span>
+                        </div>
+                        <div class="managers_line">
+                            <div class="manager_item">
+                                <div class="manager_info">
+                                    <img src="img/card/Photo.png" alt="" class="manager_img">
+                                    <div class="manager_name">Дарья Цветкова</div>
+                                </div>
+                                <div class="manager_contacts">
+                                    <div class="manager_email">
+                                        <a href="" class="manager_m">Написать</a>
+                                        <img src="img/icons/email.png" alt="" class="manager_icon">
+                                    </div>
+                                    <div class="manager_phone">
+                                        <a href="" class="manager_ph">Позвонить</a>
+                                        <img src="img/icons/phone.png" alt="" class="manager_icon">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manager_item">
+                                <div class="manager_info">
+                                    <img src="img/card/Photo.png" alt="" class="manager_img">
+                                    <div class="manager_name">Дмитрий Лавров</div>
+                                </div>
+                                <div class="manager_contacts">
+                                    <div class="manager_email">
+                                        <a href="" class="manager_m">Написать</a>
+                                        <img src="img/icons/email.png" alt="" class="manager_icon">
+                                    </div>
+                                    <div class="manager_phone">
+                                        <a href="" class="manager_ph">Позвонить</a>
+                                        <img src="img/icons/phone.png" alt="" class="manager_icon">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manager_item">
+                                <div class="manager_info">
+                                    <img src="img/card/Photo.png" alt="" class="manager_img">
+                                    <div class="manager_name">Екатерина Горбачева</div>
+                                </div>
+                                <div class="manager_contacts">
+                                    <div class="manager_email">
+                                        <a href="" class="manager_m">Написать</a>
+                                        <img src="img/icons/email.png" alt="" class="manager_icon">
+                                    </div>
+                                    <div class="manager_phone">
+                                        <a href="" class="manager_ph">Позвонить</a>
+                                        <img src="img/icons/phone.png" alt="" class="manager_icon">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-mob">
+                    <div class="container_hide">
+                        <div class="container-wrap">
+                            <div class="contacts-mob_title-wrap">
+                                <p>
+                                    <span class="contacts-mob_title">Контактная информация</span>
+                                    <span class="contacts-mob_title contacts-mob_title-color">
+                                        в Санкт-Петербурге
+                                        <svg class="card-svg card-svg-contacts" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                        <path class="card-path" fill-rule="evenodd" clip-rule="evenodd" d="M0.958252 1.86826L2.27892 0.353516L7.93895 6.84526L2.27892 13.337L0.958252 11.8223L5.2976 6.84526L0.958252 1.86826Z" fill="#2F2F2F"/>
+                                    </svg>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-info-common active">
+                            <div class="contacts-mob_title-wrap">
+                                <p>
+                                    <span class="contacts-mob_num">8 (812) 331-34-67</span>
+                                    <span class="contacts-mob_sub">основной офис в СПб</span>
+                                </p>
+                            </div>
+                            <div class="contacts-mob_item">
+                                <div class="contacts-mob_item-title">
+                                    <img src="img/icons/tick.png" alt="" class="contacts-mob_icon">
+                                    <div class="contacts-mob_item-name contacts-mob_item-name__top">Время работы</div>
+                                </div>
+                                <div class="contacts-mob_info">
+                                    <div class="contacts-mob_left">
+                                        <p class="contacts-mob_item-name">9:00 - 17:30 </p>
+                                    </div>
+                                    <div class="contacts-mob_right">
+                                        <p class="contacts-mob_p">обед 13:00 - 13:30</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts-mob_item">
+                                <div class="contacts-mob_item-title">
+                                    <img src="img/icons/map.png" alt="" class="contacts-mob_icon">
+                                    <div class="contacts-mob_item-name contacts-mob_item-name__top">Адрес</div>
+                                </div>
+                                <div class="contacts-mob_info">
+                                    <div class="contacts-mob_left">
+                                        <p class="contacts-mob_item-name">ул. Химиков, 26</p>
+                                    </div>
+                                    <div class="contacts-mob_right">
+                                        <a href="" class="contacts-mob_a">Указать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts-mob_item">
+                                <div class="contacts-mob_item-title">
+                                    <img src="img/icons/mail.png" alt="" class="contacts-mob_icon">
+                                    <div class="contacts-mob_item-name contacts-mob_item-name__top">Email</div>
+                                </div>
+                                <div class="contacts-mob_info">
+                                    <div class="contacts-mob_left">
+                                        <p class="contacts-mob_item-name">Espe@espe.spb.ru</p>
+                                    </div>
+                                    <div class="contacts-mob_right">
+                                        <a href="" class="contacts-mob_a">Написать нам</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container_hide container_hide-mob">
+                <div class="product_dev container-fluid">
+                    <div class="rectangle">
+                        <svg class="card-svg" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                            <path class="card-path" fill-rule="evenodd" clip-rule="evenodd" d="M0.958252 1.86826L2.27892 0.353516L7.93895 6.84526L2.27892 13.337L0.958252 11.8223L5.2976 6.84526L0.958252 1.86826Z" fill="#2F2F2F"/>
+                        </svg>
+                    </div>
+                    <h2 class="common_h2">Другие офисы</h2>
+                </div>
+                <div class="container-info-common active">
+                    <div class="addresses_line addresses_line__mob">
+                        <div class="addresses_item">
+                            <div class="addresses_info">
+                                <div class="addresses_wrap">
+                                    <span class="addresses_txt">Челябинск <br> Кронштадская д.17</span>
+                                </div>
+                            </div>
+                            <div class="addresses_contacts">
+                                <div class="addresses_contacts-wrap">
+                                    <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                </div>
+                                <div class="addresses_image">
+                                    <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addresses_item">
+                            <div class="addresses_info">
+                                <div class="addresses_wrap">
+                                    <span class="addresses_txt">Краснодар<br> ул. Крупской д. 2 к. 2</span>
+                                </div>
+                            </div>
+                            <div class="addresses_contacts">
+                                <div class="addresses_contacts-wrap">
+                                    <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                </div>
+                                <div class="addresses_image">
+                                    <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addresses_item">
+                            <div class="addresses_info">
+                                <div class="addresses_wrap">
+                                    <span class="addresses_txt">Нижний Новгород<br> ул. Коновалова д.5</span>
+                                </div>
+                            </div>
+                            <div class="addresses_contacts">
+                                <div class="addresses_contacts-wrap">
+                                    <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                </div>
+                                <div class="addresses_image">
+                                    <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addresses_item">
+                            <div class="addresses_info">
+                                <div class="addresses_wrap">
+                                    <span class="addresses_txt">Москва<br> г.Мытищи ул. Силикатная д.11</span>
+                                </div>
+                            </div>
+                            <div class="addresses_contacts">
+                                <div class="addresses_contacts-wrap">
+                                    <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                </div>
+                                <div class="addresses_image">
+                                    <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="addresses">
+            <div class="addresses_content container-fluid">
+                <div class="container_hide">
+                    <div class="addresses_top">
+                        <div class="product_dev">
+                            <h2 class="common_h2">Другие адреса компании</h2>
+                            <div class="rectangle">
+                                <svg class="product_rectangle " xmlns="http://www.w3.org/2000/svg" width="21" height="11" viewBox="0 0 21 11" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0652 0.18457L20.3384 2.1679L10.5961 10.6679L0.853817 2.1679L3.12702 0.18457L10.5961 6.70123L18.0652 0.18457Z" fill="#2F2F2F"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="office_btns">
+                            <button class="office_button office_button__black">
+                                <a href="" class="office-btn">Дилеры</a>
+                            </button>
+                            <button class="office_button office_button__color">
+                                <a href="" class="office-btn">Филиалы</a>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="container-info-common active">
+                        <div class="addresses_line">
+                            <div class="addresses_item">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Челябинск <br> Кронштадская д.17</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Челябинск <br> Кронштадская д.17</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Челябинск <br> Кронштадская д.17</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses_item addresses_item__mod">
+                                <div class="addresses_info">
+                                    <div class="addresses_wrap">
+                                        <span class="addresses_txt">Владимир<br> ул. Полины Осипенко д. 57</span>
+                                    </div>
+                                </div>
+                                <div class="addresses_contacts">
+                                    <div class="addresses_contacts-wrap">
+                                        <a href=""><span class="addresses_cntcs">Посмотреть контакты</span></a>
+                                    </div>
+                                    <div class="addresses_image">
+                                        <img src="img/icons/addresses_black.png" alt="" class="addresses_icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="additional-mob">
+            <div class="additional-mob_content container-fluid">
+                <div class="product_dev">
+                    <h2 class="common_h2">Вы смотрели</h2>
+                </div>
+                <div class="additional-mob_similar">
+                    <div class="additional_button additional_button__mob">
+                        <a href="#" class="additional-btn-mob">Vilara</a>
+                    </div>
+                    <div class="additional_button additional_button__mob additional_button__big active">
+                        <a href="#" class="additional-btn-mob">Пружинный блок EVS-420</a>
+                    </div>
+                    <div class="additional_button additional_button__mob additional_button__sm">
+                        <a href="#" class="additional-btn-mob">Синтепон Ewona</a>
+                    </div>
+                    <div class="additional_button additional_button__mob additional_button__last">
+                        <a href="#" class="additional-btn-mob">Паралон Vita</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+        <footer class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="wrap-footer-contant">
+                <a href="#" class="footer-logo">
+                    <img src="img/footer/Vector.svg" alt="img" class="footer-logo__title">
+                    <p class="footer-logo__subtitle">
+                        Ваш поставщик с 1996 г.
+                    </p>
+                </a>
+                <div class="footer-right-content">
+                    <div class="footer-right-top">
+                        <div class="list-town">
+                            <select class="list-town__select">
+                                <option value="Санкт Петербур">Санкт Петербург</option>
+                                <option value="Санкт Петербур">Санкт Петербург</option>
+                                <option value="Санкт Петербур">Санкт Петербург</option>
+                            </select>
+                            <div class="select-arrow-1"></div>
+                        </div>
+                         <div class="wrap-contact">
+                            <div class="wrap-contact-links">
+                                <a href="mailto:Espe@espe.spb.ru" class="footer-email">
+                                    Espe@espe.spb.ru
+                                </a>
+                                <a href="tel:88123313467" class="footer-tel">
+                                    8 812 331-34-67
+                                </a>
+                            </div>
+                            <button class="footer-btn-write">
+                                Написать нам
+                            </button>
+                         </div>
+                    </div>
+                    <div class="footer-right-bottom">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">
+                                    Наши офисы
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">
+                                    Документы и сертификаты
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">
+                                    Обучение
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#" class="footer-menu__link">
+                                    О компании
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="privacy-policy">
+                            Политика конфиденциальности 
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="wrap-mob-icons">
+                        <a href="tel:88123313467#" class="footer-tel-mob">
+                            <i class="footer-tel-mob__icon"></i>
+                        </a>
+                        <a href="mailto:Espe@espe.spb.ru" class="footer-email-mob">
+                            <i class="footer-email-mob__icon"></i>  
+                        </a>
+                    </div>
+            </div>
+        </div>
+        
+    </footer>
+<!-- Модальное окно -->
+    <div style="display: none;">
+        <div id="exampleModal"> 
+            <div class="checkout-block">
+                <div class="wrap-checkout-title">
+                    <h2 class="checkout-title">
+                        Оформление заказа
+                    </h2>
+                    <div class="box-modal_close arcticmodal-close">
+                    </div>
+                </div>
+                <form action="">
+                    <div class="block-payer">
+                        <p class="block-payer__text">
+                            Выбирите тип плательщика*
+                        </p>
+                        <div class="block-payer__dysplay">
+                            <select class="block-payer__select">
+                                <option value="не выбрано">не выбрано</option>
+                                <option value="тип 1">тип плательщика</option>
+                                <option value="тип 2">тип плательщика</option>
+                            </select>
+                            <div class="select-arrow-1"></div>
+                        </div>
+                    </div>
+                    <div class="checkout-inpits">
+                        <div class="checkout-inpits__block">
+                            <label for="checkout-name">
+                                Введите ваше имя*
+                            </label>
+                            <input class="input-form" type="text" placeholder="Ваше/Контактного лица">
+                        </div>
+                        <div class="checkout-inpits__block">
+                            <label for="checkout-name">
+                                Введите ваш email*
+                            </label>
+                            <input class="input-form" type="email" placeholder="Email">
+                        </div>
+                        <div class="checkout-inpits__block">
+                            <label for="checkout-name">
+                                Введите ваш телефон*
+                            </label>
+                            <input class="input-form" type="tel" placeholder="+7 (000) 000 00 00" pattern="^[ 0-9]+$">
+                        </div>
+                    </div>
+                    <div class="block-btn">
+                        <button class="btn-continue">
+                            Продолжить
+                        </button>
+                        <p class="block-btn__text">
+                            *поля обязательные для заполнения
+                        </p>
+                    </div>
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<!--    <script src="js/parallax-bg.js"></script> -->
+    <script src="js/scripts_vb.js"></script>
+    <script src="js/canvas_vb.js"></script>
+    <script src="js/scripts_vp.js"></script>
+<!--    <script src="js/jquery.fullPage.js"></script> -->
+</body>
+</html>

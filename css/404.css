@@ -1,0 +1,134 @@
+
+.section-404 {
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.background-404 {
+	background: url(../img/404/background-404.png) no-repeat;
+	background-position: center;
+	background-size: 90% auto;
+	width: 100%;
+	height: 100%;
+}
+
+.top-contetn-404 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	height: 70px;
+}
+
+.logo-404 {
+	height: 14px;
+	width: 70px;
+}
+
+.logo-404-img {
+	background: url(../img/404/espe-404.svg) no-repeat;
+	display: block;
+	height: 14px;
+	width: 70px;
+}
+
+/*center-content-404*/
+
+.background-404 {
+	flex: 1 auto;
+	padding: 20px 0;
+}
+
+.background-404 .container-fluid {
+	height: 100%;
+}
+
+.center-content-404 {
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-404 {
+	display: block;
+	font-size: 26px;
+	max-width: 640px;
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.list-links-404 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.list-links-404__link {
+	padding: 0 25px;
+	border: 2px solid #414291;
+	color: #414291;
+	font-size: 16px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+/*----------------------*/
+
+.bottom-contetn-404 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 70px;
+}
+
+a.home-404,
+a.catalog-404 {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {  
+	.section-404 {
+		margin-top: -60px;
+		height: auto;
+	}
+
+	.text-404 {
+		font-size: 16px;
+	}
+
+}
